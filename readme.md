@@ -25,33 +25,23 @@ A simple Spring Boot backend API to receive and store contact form submissions i
 ---
 
 ## 📂 Project Structure
-
-├───src
-│   ├───main
-│   │   ├───java
-│   │   │   └───com
-│   │   │       └───suraj
-│   │   │           └───contactform
-│   │   │               └───model
-│   │   └───resources
-│   │       ├───static
-│   │       └───templates
-│   └───test
-│       └───java
-│           └───com
-│               └───suraj
-│                   └───contactform
-└───target
-    ├───classes
-    │   ├───com
-    │   │   └───suraj
-    │   │       └───contactform
-    │   │           └───model
-    │   └───META-INF
-    │       └───maven
-    │           └───com.suraj.contactform
-    │               └───contact-api
-    └───test-classes
-        └───com
-            └───suraj
-                └───contactform
+contact-form-backend/
+├── src/
+│ ├── main/
+│ │ ├── java/
+│ │ │ └── com/
+│ │ │ └── suraj/
+│ │ │ └── contactform/
+│ │ │ ├── controller/
+│ │ │ │ └── ContactMessageController.java
+│ │ │ ├── model/
+│ │ │ │ └── ContactMessage.java
+│ │ │ ├── repository/
+│ │ │ │ └── ContactMessageRepository.java
+│ │ │ └── service/
+│ │ │ └── ContactMessageService.java
+│ ├── resources/
+│ │ ├── application.properties
+│ │ └── static/ (optional for frontend files)
+├── pom.xml
+└── README.md
